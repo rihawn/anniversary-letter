@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Anniversary</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #ffeef2;
+      text-align: center;
+      padding: 50px;
+    }
+    #letter {
+      padding: 20px 30px;
+      background: #fff0f5;
+      border: 2px dashed #d36c6c;
+      width: 300px;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    #letter:hover {
+      background-color: #ffe4e9;
+    }
+    #message {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      max-width: 600px;
+      margin: 30px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 Open the Letter</h1>
+  <div id="letter">Click to open your anniversary letter</div>
+  <div id="message">
+    <p>
+      My love, today marks one year of the most beautiful journey with you. Every moment has felt like a gift, every laugh a melody, and every glance a poem. I love you more than words can hold. Here’s to us, now and always. ❤️
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("letter").onclick = function () {
+      document.getElementById("message").style.display = "block";
+    };
+  </script>
+</body>
+</html>
